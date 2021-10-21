@@ -106,19 +106,21 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #2e3c56;
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+height: 150px;
 }
 #header.header-scrolled {
-  padding: 12px 0;
+  padding: 0, 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #header .logo {
   font-size: 26px;
   margin: 0;
   padding: 0;
+
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -128,7 +130,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #0b2341;
 }
 #header .logo img {
-  max-height: 40px;
+  max-height: 100px;
+  
 }
 
 /*--------------------------------------------------------------
@@ -155,8 +158,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
-  color: #0b2341;
+  font-size: 18px;
+  color: white;
+  font-family: 
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -166,15 +170,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #ed502e;
+  color: yellow;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   background: #ed502e;
-  padding: 8px 20px;
+  padding: 8px 10px;
   margin-left: 30px;
   border-radius: 4px;
   color: #fff;
 }
+
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #fff;
   background: #ef6445;
