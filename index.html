@@ -35,7 +35,24 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <script>(function(w, d) { w.CollectId = "617d55b1a5871e3eda7d46c2"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+  <script>(function(w, d) { w.CollectId = "617d55b1a5871e3eda7d46c2"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);
+  
+  var myMusic= document.getElementById("music");
+
+  function play() {
+
+  myMusic.play();
+
+  }
+
+  
+
+  function pause() {
+
+  myMusic.pause();
+
+  }
+  </script>
   <style>
     h2{
 
@@ -50,6 +67,12 @@
 
 <body>
 
+  <!-- <embed src="assets/img/piano.mp3" loop="true" autostart="true" width="3" height="3"> -->
+    
+
+  
+    
+       
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
@@ -92,6 +115,8 @@
     </div>
   </header><!-- End Header -->
 
+
+  
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -178,9 +203,14 @@
       </a>
 
     </div>
-  </section><!-- End Hero -->
+  </section>
 
-  <main id="main">
+  <audio loop autoplay id="vid">
+    <source src="assets/img/piano.mp3" type="audio/mp3">
+  </audio>
+  
+  <bgsound src="assets/img/piano.mp3"/>
+    <main id="main">
 
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -295,7 +325,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="110" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Happy Peoples</strong> </p>
               <a href="#">Find out more &raquo;</a>
             </div>
@@ -313,7 +343,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="735" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="324" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Hours Of Guidance</strong> </p>
               <a href="#">Find out more &raquo;</a>
             </div>
@@ -322,7 +352,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Domains Worked</strong></p>
               <a href="#">Find out more &raquo;</a>
             </div>
@@ -1262,7 +1292,7 @@
                 <div class="info-box mt-4">
                   <a href="#" ><i class="bx bx-envelope"></i></a>
                   <h3>Email us</h3>
-                  <p>info@prerakdarpanika.com</p>
+                  <p>yourcoach@prerakdarpanika.com</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -1403,6 +1433,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+
+document.getElementById('vid').play();
+
+  </script>
 
 </body>
 
